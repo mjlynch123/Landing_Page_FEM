@@ -1,0 +1,475 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue";
+  width: 100vw;
+}
+
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+nav {
+  display: flex;
+  color: hsl(0, 0%, 41%);
+  height: 70px;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 30px;
+}
+
+nav li {
+  list-style: none;
+  margin-top: 10px;
+  margin-inline-end: 50px;
+}
+
+nav img {
+  margin-left: -35px;
+  margin-top: -2px;
+  margin-inline-end: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.option i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.option.rotate i {
+  transform: rotate(180deg);
+}
+
+.homeFeatures {
+  border: none;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+  background-color: white;
+  position: absolute;
+  top: 165px;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px 7px #e5e5e5;
+  border-radius: 10px;
+}
+
+.homeFeatures > div {
+  display: flex;
+  align-items: center;
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+.todoHome img,
+.calenderHome img,
+.remindersHome img,
+.planningHome img {
+  height: 22px;
+}
+
+.companyHome {
+  border: none;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+  background-color: white;
+  position: absolute;
+  top: 135px;
+  left: 375px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px 7px #e5e5e5;
+  border-radius: 10px;
+}
+
+.companyHome > div {
+  margin-left: 35px;
+}
+
+.right-side {
+  display: flex;
+  position: absolute;
+  right: 25px;
+  width: 225px;
+  color: black;
+}
+
+.right-side a {
+  color: black;
+}
+
+.register {
+  border: 2px solid;
+  padding: 10px 25px;
+  margin-top: 0px;
+  border-radius: 15px;
+}
+
+.register:hover {
+  background-color: black;
+  color: white;
+}
+
+.main-area {
+  justify-content: center;
+  display: flex;
+}
+
+.left,
+.right {
+  /* border: 1px solid; */
+  width: 820px;
+  padding: 10px;
+}
+
+.left h1 {
+  font-size: 100px;
+}
+
+.left p {
+  margin-top: -35px;
+  width: 420px;
+  line-height: 1.5rem;
+  color: hsl(0, 0%, 41%);
+}
+
+.left button {
+  padding: 14px 30px;
+  border: 2px solid;
+  margin-left: -3px;
+  border-radius: 7px;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+}
+
+.left button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.right img {
+  height: 600px;
+  width: 100%;
+}
+
+.companies {
+  margin-top: 130px;
+}
+
+.companies img {
+  margin-inline-end: 80px;
+}
+
+.background-menu {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100%;
+  background-color: hsla(0, 0%, 41%, 0.7);
+  /* pointer-events: none; */
+}
+
+.side-menu {
+  position: absolute;
+  background-color: white;
+  border-left: 2px solid #e5e5e5;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 60%;
+}
+
+.side-menu li {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  color: hsl(0, 0%, 41%);
+}
+
+.side-menu a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.side-menu li img {
+  height: 10px;
+}
+
+.side-menu img {
+  margin: 10px;
+  z-index: 1;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* ! Media Queries */
+
+@media screen and (min-width: 2000px) {
+    .left,
+    .right {
+      /* border: 1px solid; */
+      width: 760px;
+      height: 700px;
+      padding: 10px;
+    }
+
+    .right img {
+        height: 700px;
+    }
+  
+    .left {
+      height: 590px;
+    }
+  
+    .companies {
+      margin-top: 230px;
+    }
+  
+    .companies img {
+      margin-inline-end: 60px;
+    }
+  }
+
+@media screen and (max-width: 2000px) {
+  .left,
+  .right {
+    /* border: 1px solid; */
+    width: 650px;
+    padding: 10px;
+  }
+
+  .left {
+    height: 590px;
+  }
+
+  .companies {
+    margin-top: 10px;
+  }
+
+  .companies img {
+    margin-inline-end: 60px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .attribution {
+    visibility: hidden;
+  }
+
+  .main-area {
+    width: 100vw;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .menuBtn {
+    visibility: visible !important;
+    position: absolute;
+    right: -60px;
+  }
+
+  .option,
+  .login,
+  .register {
+    visibility: hidden;
+  }
+
+  .left,
+  .right {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .right img {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .left p {
+    margin: 0 auto;
+    font-size: 25px;
+    width: 600px;
+  }
+
+  .left button {
+    margin-top: 20px;
+  }
+
+  .companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+
+  .companies img {
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .features,
+  .company {
+    height: auto;
+    width: auto;
+    margin-top: -25px;
+    margin-left: 45px;
+    margin-right: 10px;
+  }
+
+  .company {
+    font-size: 18px;
+  }
+
+  .todo,
+  .calender,
+  .reminders,
+  .planning {
+    display: flex;
+    align-items: center;
+  }
+
+  .todo img,
+  .calender img,
+  .reminders img,
+  .planning img {
+    height: 22px;
+  }
+
+  .buttons li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .attribution {
+    visibility: hidden;
+  }
+
+  .main-area {
+    flex-direction: column-reverse;
+    width: 100vw !important;
+    margin-left: 0px;
+    margin-top: -0px;
+    padding: 0;
+  }
+
+  nav {
+    width: 100vw;
+    margin: 0;
+  }
+
+  nav ul {
+    overflow-x: hidden;
+  }
+
+  nav img {
+    padding: 0;
+    position: absolute;
+  }
+
+  .right img {
+    height: 300px;
+    width: 100vw;
+    margin: 0px;
+  }
+
+  .left {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .left h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .left p {
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+    width: 85vw;
+  }
+
+  .left button {
+    display: block;
+    margin: 15px auto;
+  }
+
+  .right {
+    width: 100vw;
+    padding: 0;
+  }
+
+  nav img {
+    margin-left: -50px;
+  }
+
+  .menuBtn {
+    visibility: visible !important;
+    position: absolute;
+    right: -60px;
+  }
+
+  .option,
+  .login,
+  .register {
+    visibility: hidden;
+  }
+
+  .companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .companies img {
+    margin-inline-end: 20px;
+    width: 70px;
+  }
+}

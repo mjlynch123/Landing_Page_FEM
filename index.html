@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- displays site properly based on user's device -->
+    <script
+      src="https://kit.fontawesome.com/5e86550e56.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><img src="images/logo.svg" alt="" /></li>
+        <li class="option" id="features">
+          Features <i class="fa-solid fa-chevron-down"></i>
+        </li>
+
+        <div class="homeFeatures">
+          <div class="todoHome">
+            <span><img src="images/icon-todo.svg" alt=""></span>
+            <span>Todo List</span>
+          </div>
+        
+          <div class="calenderHome">
+            <span><img src="images/icon-calendar.svg" alt=""></span>
+            <span>Calendar</span>
+          </div>
+        
+          <div class="remindersHome">
+            <span><img src="images/icon-reminders.svg" alt=""></span>
+            <span>Reminders</span>
+          </div>
+        
+          <div class="planningHome">
+            <span><img src="images/icon-planning.svg" alt=""></span>
+            <span>Planning</span>
+          </div>
+        </div>
+
+        <li class="option" id="company">Company <i class="fa-solid fa-chevron-down"></i></li>
+
+        <div class="companyHome">
+          <div class="todo">
+            <p>History</p>
+          </div>
+
+          <div class="calender">
+            <p>Our Team</p>
+          </div>
+
+          <div class="reminders">
+            <p>Blog</p>
+          </div>
+        </div>
+
+        <li class="option"><a href="#">Careers</a></li>
+        <li class="option"><a href="#">About</a></li>
+
+        <div class="right-side">
+          <li class="login"><a href="#">Login </a></li>
+          <a href="#"><li class="register">Register</li></a>
+
+          <li class="menuBtn" style="visibility: hidden">
+            <img src="images/icon-menu.svg" alt="" />
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="background-menu">
+      <div class="side-menu">
+        <img src="images/icon-close-menu.svg" alt="" />
+
+
+        <li class="feature-click">
+          <span style="font-size: 23px">Features </span>
+          <span style="margin-left: -2px; margin-top: 4px">
+            <img src="images/icon-arrow-down.svg" alt="" class="arrow"/>
+          </span>
+        </li>
+
+        <div class="features">
+          <div class="todo">
+            <span><img src="images/icon-todo.svg" alt=""></span>
+            <span>Todo List</span>
+          </div>
+
+          <div class="calender">
+            <span><img src="images/icon-calendar.svg" alt=""></span>
+            <span>Calender</span>
+          </div>
+
+          <div class="reminders">
+            <span><img src="images/icon-reminders.svg" alt=""></span>
+            <span>Reminders</span>
+          </div>
+
+          <div class="planning">
+            <span><img src="images/icon-planning.svg" alt=""></span>
+            <span>Planning</span>
+          </div>
+        </div>
+
+        <div class="company-click">
+          <li>
+            <span style="font-size: 23px">Company </span>
+            <span style="margin-left: -2px; margin-top: 4px">
+              <img src="images/icon-arrow-down.svg" alt="" class="arrow1"/>
+            </span>
+          </li>
+        </div>
+
+        <div class="company">
+          <div class="todo">
+            <p>History</p>
+          </div>
+
+          <div class="calender">
+            <p>Our Team</p>
+          </div>
+
+          <div class="reminders">
+            <p>Blog</p>
+          </div>
+        </div>
+
+
+        <li style="font-size: 23px"><a href="#">Careers</a></li>
+
+        <li style="font-size: 23px"><a href="#">About</a></li>
+
+        <div class="buttons">
+          <li class="login" style="visibility: visible">
+            <a href="#">Login </a>
+          </li>
+          <li class="register" style="visibility: visible">
+            <a href="#">Register</a>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-area">
+      <div class="left">
+        <h1>
+          Make <br class="break" />
+          remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+
+        <div class="companies">
+          <img src="images/client-databiz.svg" alt="" />
+
+          <img src="images/client-audiophile.svg" alt="" />
+
+          <img src="images/client-meet.svg" alt="" />
+
+          <img src="images/client-maker.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="images/image-hero-desktop.png" alt="" />
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Martin Lynch</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
